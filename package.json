@@ -1,0 +1,22 @@
+{
+  "name": "reacttut",
+  "version": "1.0.0",
+  "description": "Namste react",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Nithin",
+  "license": "ISC",
+  "dependencies": {
+    "latest": "^0.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "browserslist" :[
+    "last 2 versions"
+  ]
+}
