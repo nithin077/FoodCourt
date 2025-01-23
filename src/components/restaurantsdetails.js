@@ -1,0 +1,33 @@
+import { useParams } from "react-router";
+import useRestaurantDetails from "../sharedcomponents/useRestaurantDetails";
+import { IMG_CDN_URL } from "../sharedcomponents/constant";
+
+const RestaurantDetails = () => {
+  const { id } = useParams();
+
+  const restoDetails = useRestaurantDetails(id);
+
+  if (restoDetails && restoDetails.length === 0) return null;
+  return  !restoDetails ? <h2  className="p-4 font-bold text-lg">No RestaurantDetails !!</h2> : (
+    <div className="m-4 flex justify-center">
+      <div className=" w-3/5">
+        <h1 className="p-4 font-bold text-lg">RestaurantDetails page </h1>
+        {restoDetails?.map((item) => (
+          <div
+            key={item?.card?.info?.id}
+            className="pt-4 mt-8 shadow-lg flex flex-wrap justify-end"
+          >
+            <h3 className="p-6 justify-start font-bold text-xl mr-96">{item?.card?.info?.name}</h3>
+            <img
+              className="h-40 w-40"
+              alt="image"
+              src={IMG_CDN_URL + item?.card?.info?.imageId}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default RestaurantDetails;

@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Namste react",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "author": "Nithin",
@@ -10,13 +12,19 @@
   "dependencies": {
     "latest": "^0.2.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router": "^7.1.1",
+    "react-router-dom": "^7.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.13.3",
-    "process": "^0.11.10"
+    "postcss": "^8.5.1",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.17"
   },
-  "browserslist" :[
+  "browserslist": [
     "last 2 versions"
   ]
 }
