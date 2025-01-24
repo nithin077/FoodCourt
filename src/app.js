@@ -58,12 +58,10 @@ const AppLayout = () => {
     <>
       <HeaderComponent />
       <Outlet />
-      <FooterComponent />
+      <FooterComponent/>
     </>
   );
 };
-
-//const appRouter =
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
