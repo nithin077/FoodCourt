@@ -2,7 +2,7 @@ const FooterComponent = () => {
   const name = "Chilumula Nithin."
   return (
     <footer>
-      <div className="fixed inset-x-0 bottom-14">
+      <div className="m-10">
         <p className="flex flex-wrap justify-center">
           <span className="mr-2">Developed By </span>
           <a

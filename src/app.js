@@ -7,6 +7,9 @@ import { BrowserRouter, Route, Routes, Outlet } from "react-router";
 import ContactComponent from "./components/contactus";
 import RestaurantDetails from "./components/restaurantsdetails";
 import Profile from "./components/profile";
+import { Provider } from "react-redux";
+import store from "./components/store";
+import Cart from "./components/cart";
 
 //Lazy Loading
 const About = lazy(() => import("./components/about"));
@@ -55,11 +58,11 @@ const About = lazy(() => import("./components/about"));
 
 const AppLayout = () => {
   return (
-    <>
+    <Provider store = {store}>
       <HeaderComponent />
       <Outlet />
       <FooterComponent/>
-    </>
+    </Provider>
   );
 };
 
@@ -76,6 +79,7 @@ root.render(
       </Route>
       <Route index path="contact" element={<ContactComponent />} />
       <Route path="restaurants/:id" element={<RestaurantDetails />} />
+      <Route path="cart" element={<Cart />} />
     </Route>
   </Routes>
   </Suspense>

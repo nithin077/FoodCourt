@@ -19,7 +19,7 @@ const BodyComponent = () => {
         allRestaurant={allRestaurant}
         setfilterRestaurant={setfilterRestaurant}
       />
-      <div className="mx-44">
+      <div className="mx-10">
         <div className="flex flex-wrap">
           {filterRestaurant.length === 0 ? (
             <h3>No Restaurants Found for {searchText}</h3>

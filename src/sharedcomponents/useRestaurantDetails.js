@@ -12,9 +12,9 @@ const useRestaurantDetails = (id) => {
     const data = await fetch(FETCH_RESTO_DETAILS_URL+id );
     const json = await data.json();
     const itemDeatils =
-      json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[7]?.card
+      json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[4]?.card
         ?.card?.itemCards;
-        console.log(itemDeatils)
+        console.log(json?.data)
     setRestoDetails(itemDeatils);
   }
   return restoDetails;
