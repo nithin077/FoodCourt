@@ -5,7 +5,7 @@ const Search = ({ setfilterRestaurant, allRestaurant }) => {
   const [searchText, setsearchText] = useState("");
 
   return (
-    <div className="my-5 p-5 bg-neutral-100">
+    <div className="my-5 p-5 bg-neutral-100 flex justify-center">
       <input
         type="text"
         className="search-input h-8 border-black"

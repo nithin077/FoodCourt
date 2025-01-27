@@ -1,6 +1,6 @@
 const ContactComponent = () => {
     return (
-        <div className="contact-us">
+        <div className="m-4">
             <h1>This is Contact Us page</h1>
         </div>
     )
