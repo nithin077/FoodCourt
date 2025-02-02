@@ -7,6 +7,7 @@ const Search = ({ setfilterRestaurant, allRestaurant }) => {
   return (
     <div className="my-5 p-5 bg-neutral-100 flex items-center">
       <input
+        data-testid="search-input"
         type="text"
         className="search-input h-10 border-2 border-gray-300 rounded-md px-4 focus:outline-none focus:border-blue-400"
         placeholder="Search"
@@ -16,7 +17,7 @@ const Search = ({ setfilterRestaurant, allRestaurant }) => {
         }}
       />
       <button
-        className="ml-3 h-10 px-6 bg-blue-500 hover:bg-blue-800 text-white rounded-md font-bold shadow-md transition duration-300 ease-in-out"
+        data-testid="btn-search" className="ml-3 h-10 px-6 bg-blue-500 hover:bg-blue-800 text-white rounded-md font-bold shadow-md transition duration-300 ease-in-out"
         onClick={() => {
           const data = filterData(searchText, allRestaurant);
           setfilterRestaurant(data);

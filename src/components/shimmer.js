@@ -1,6 +1,6 @@
 function ShimmerUi() {
   return (
-    <div className="flex flex-wrap m-10 gap-8 justify-center ">
+    <div className="flex flex-wrap m-10 gap-8 justify-center " data-testid="shimmer">
       {Array(8)
         .fill("")
         .map((e, index) => {
