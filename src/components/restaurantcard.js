@@ -2,7 +2,7 @@ import { IMG_CDN_URL } from "../sharedcomponents/constant";
 
 const RestaurantCard = ({name,cloudinaryImageId,cuisines,areaName}) => {
     return (
-      <div className="w-52 p-2 m-2 shadow-lg h-80 overflow-hidden">
+      <div className="w-52 p-2 m-2 shadow-lg h-80 overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xxl">
         <img className="h-40"
           src={
             IMG_CDN_URL +

@@ -23,7 +23,7 @@ const AboutComponent = () => {
   const [visibleSection, setvisibleSection] = useState("about");
   return (
     <div className="about-us">
-      <h1>This is About Us page</h1>
+      <h1 className="m-4 font-bold text-xl">About Us</h1>
       <Section
         title={"About"}
         description={

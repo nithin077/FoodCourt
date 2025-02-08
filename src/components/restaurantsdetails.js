@@ -20,7 +20,7 @@ const RestaurantDetails = () => {
     <h2 className="p-4 font-bold text-lg">No RestaurantDetails !!</h2>
   ) : (
     <div className="m-4 flex justify-center">
-      <div className="w-3/5">
+      <div className="w-3/5"  data-testid="menu">
         <h1 className="p-4 font-bold text-lg">RestaurantDetails page</h1>
         {restoDetails?.map((item) => (
           <div
@@ -35,7 +35,7 @@ const RestaurantDetails = () => {
               <p>&#9733; {item?.card?.info?.ratings?.aggregatedRating?.rating}</p>
               </div>
               <button
-                className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white mt-2 h-10 w-16 font-bold text-lg rounded-lg shadow-md transition duration-300 ease-in-out"
+                data-testid="addBtn" className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 text-white mt-2 h-10 w-16 font-bold text-lg rounded-lg shadow-md transition duration-300 ease-in-out"
                 onClick={() => handleAddItem(item)}
               >
                 Add
