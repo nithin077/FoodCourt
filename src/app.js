@@ -68,7 +68,7 @@ const AppLayout = () => {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-<BrowserRouter>
+<BrowserRouter basename="/FoodCourt">
 <Suspense>
   <Routes>
     <Route path="/" element={<AppLayout />}>
