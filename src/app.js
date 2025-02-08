@@ -71,7 +71,7 @@ root.render(
 <BrowserRouter basename="/FoodCourt">
 <Suspense>
   <Routes>
-    <Route path="/" element={<AppLayout />}>
+    <Route path="/FoodCourt" element={<AppLayout />}>
 
       <Route path="/" element={<BodyComponent />}/>
       <Route path="about" element={<About />} >
