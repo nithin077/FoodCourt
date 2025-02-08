@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import HeaderComponent from "./components/header";
 import FooterComponent from "./components/footer";
 import BodyComponent from "./components/body";
-import { BrowserRouter, Route, Routes, Outlet } from "react-router";
+import { BrowserRouter, Route, Routes, Outlet, HashRouter } from "react-router";
 import ContactComponent from "./components/contactus";
 import RestaurantDetails from "./components/restaurantsdetails";
 import Profile from "./components/profile";
@@ -68,10 +68,10 @@ const AppLayout = () => {
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-<BrowserRouter basename="/FoodCourt">
+<HashRouter>
 <Suspense>
   <Routes>
-    <Route path="/FoodCourt" element={<AppLayout />}>
+    <Route path="/" element={<AppLayout />}>
 
       <Route path="/" element={<BodyComponent />}/>
       <Route path="about" element={<About />} >
@@ -83,5 +83,5 @@ root.render(
     </Route>
   </Routes>
   </Suspense>
-</BrowserRouter>
+</HashRouter>
 );
